@@ -43,12 +43,14 @@ body{
 
 #progressFillStrip{
     width: 10%;
-    height: 50%;
+    height: 60%;
     background-color: transparent;
     position: absolute;
+    top: 0;
     transform-origin: 50% bottom;
     transition: height 0.3s;
     border-top: 1rem solid var(--highlightedBackground);
+    border-bottom: 1rem solid var(--highlightedBackground);
     background-color: transparent;
     
     animation-iteration-count: infinite;
