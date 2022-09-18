@@ -5,6 +5,11 @@ const progressCircleTypeSwitch = document.getElementById("progressCircleTypeSwit
 let inProgress = false;
 let progressCircleType = "single-side";
 
+progressCircleTypeSwitch.value = "single-side";
+
+toggleProgress.addEventListener("click", handleProgressToggle);
+progressCircleTypeSwitch.addEventListener("change", handleProgressCircleTypeChange)
+
 function handleProgressToggle(){
     inProgress = !inProgress;
 
@@ -36,6 +41,3 @@ function handleProgressCircleTypeChange(event){
         }
     }
 }
-
-toggleProgress.addEventListener("click", handleProgressToggle);
-progressCircleTypeSwitch.addEventListener("change", handleProgressCircleTypeChange)
