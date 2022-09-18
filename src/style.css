@@ -48,6 +48,12 @@ body{
     position: absolute;
     top: 0;
     transform-origin: 50% bottom;
+    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spinning;
+
     z-index: 2;
 }
 
