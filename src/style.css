@@ -7,6 +7,8 @@
     --lightDarkBackground: #222222;
     --darkBackground: #111111;
 
+    --highlightedBackground: purple;
+
 }
 
 *{
@@ -27,6 +29,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .innerProgressCircle{
@@ -34,4 +38,14 @@ body{
     height: 90%;
     background-color: var(--lightDarkBackground);
     border-radius: 50%;
+    z-index: 3;
+}
+
+.progressFillStrip{
+    width: 10%;
+    height: 50%;
+    background-color: var(--highlightedBackground);
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }
