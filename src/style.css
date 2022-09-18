@@ -19,6 +19,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--lightDarkBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #progressCircle{
@@ -43,14 +47,14 @@ body{
 
 #progressFillStrip{
     width: 10%;
-    height: 60%;
+    height: 50%;
     background-color: transparent;
     position: absolute;
     top: 0;
     transform-origin: 50% bottom;
     /*transition: height 0.3s;*/
     transition: border-width 0.5s;
-    border-top: 1rem solid var(--highlightedBackground);
+    border-top: var(--stripThikness) solid var(--highlightedBackground);
     border-bottom: 0rem solid var(--highlightedBackground);
     background-color: transparent;
     
