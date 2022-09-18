@@ -16,17 +16,10 @@
 }
 
 body{
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: var(--lightDarkBackground);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-body > div{
-    margin: 1.5rem;
 }
 
 button, select{
@@ -40,6 +33,19 @@ button:hover, select:hover{
     color: var(--darkColor);
     background-color: var(--lightBackground);
     transform: scale(1.05);
+}
+
+.progressWidget{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progressWidget > div{
+    margin: 1.5rem;
 }
 
 #progressCircle{
