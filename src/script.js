@@ -28,16 +28,18 @@ function handleProgressCircleTypeChange(event){
 
     switch(progressCircleType){
         case "single-side":{
-            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom;";   
+            progressFillStrip.style.height = "50%";
+            progressFillStrip.style.transformOrigin = "center bottom";
             break;
         }
         case "double-side":{
-            progressFillStrip.style.cssText = "height: 100%; transform-origin: 50% 50%;";   
+            progressFillStrip.style.height = "100%";
+            progressFillStrip.style.transformOrigin = "center center";
             break;
         }
         default:{
-            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom;";   
-            break
+            progressFillStrip.style.height = "50%";
+            progressFillStrip.style.transformOrigin = "center bottom";            break
         }
     }
 }
