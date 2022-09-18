@@ -31,11 +31,15 @@ function handleProgressCircleTypeChange(event){
     switch(progressCircleType){
         case "single-side":{
             progressFillStrip.style.height = "50%";
+            progressFillStrip.style.borderTopWidth = "var(--stripThikness)";
+            progressFillStrip.style.borderBottomWidth = "0px";
             progressFillStrip.style.transformOrigin = "center bottom";
             break;
         }
         case "double-side":{
             progressFillStrip.style.height = "100%";
+            progressFillStrip.style.borderTopWidth = "var(--stripThikness)";
+            progressFillStrip.style.borderBottomWidth = "var(--stripThikness)";
             progressFillStrip.style.transformOrigin = "center center";
             break;
         }
