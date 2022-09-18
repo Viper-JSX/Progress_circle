@@ -49,8 +49,10 @@ button:hover, select:hover{
 }
 
 #progressCircle{
-    width: 15rem;
-    height: 15rem;
+    width: 20vw;
+    height: 20vw;
+    min-width: 280px;
+    min-height: 280px;
     border-radius: 50%;
     transition: 0.2s;
     display: flex;
