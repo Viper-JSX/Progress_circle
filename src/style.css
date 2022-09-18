@@ -5,7 +5,7 @@
     --lightBackground: #EEEEEE;
     --lightDarkBackground: #222222;
     --darkBackground: #111111;
-    --highlightedBackground: purple;
+    --highlightedBackground: #2C75FF;
 
     --stripThikness: 1.5rem;
 
@@ -25,15 +25,38 @@ body{
     flex-direction: column;
 }
 
+body > div{
+    margin: 1.5rem;
+}
+
+button, select{
+    color: var(--lightColor);
+    background-color: var(--darkBackground);
+    border-radius: 0.3rem;
+    transition: 0.1s;
+}
+
+button:hover, select:hover{
+    color: var(--darkColor);
+    background-color: var(--lightBackground);
+    transform: scale(1.05);
+}
+
 #progressCircle{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
+}
+
+#progressCircle:hover{
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
 }
 
 #innerProgressCircle{
