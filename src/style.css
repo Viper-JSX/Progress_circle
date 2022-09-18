@@ -25,3 +25,10 @@ body{
     background-color: var(--darkBackground);
     border-radius: 50%;
 }
+
+.innerProgressCircle{
+    width: 95%;
+    height: 95%;
+    background-color: var(--lightDarkBackground);
+    border-radius: 50%;
+}
