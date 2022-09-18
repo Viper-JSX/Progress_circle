@@ -9,21 +9,24 @@
     </head>
 
     <body>
-        <div id="progressCircle">
-            <div id="innerProgressCircle"></div>
-            <div id="progressFillStrip"></div>
+        <div class="progressWidget">
+            <div id="progressCircle">
+                <div id="innerProgressCircle"></div>
+                <div id="progressFillStrip"></div>
+            </div>
+    
+            <div id="widgetConfigurations">
+                <button id="toggleProgress" class="button">Start</button>
+    
+                <select id="progressCircleTypeSwitch">
+                    <optgroup>
+                        <option value="single-side">Single side</option>
+                        <option value="double-side">Double side</option>
+                    </optgroup>
+                </select>
+            </div>
         </div>
 
-        <div id="widgetConfigurations">
-            <button id="toggleProgress" class="button">Start</button>
-
-            <select id="progressCircleTypeSwitch">
-                <optgroup>
-                    <option value="single-side">Single side</option>
-                    <option value="double-side">Double side</option>
-                </optgroup>
-            </select>
-        </div>
 
 
        <!-- <form name="fillStripType">
