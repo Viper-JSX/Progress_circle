@@ -48,7 +48,8 @@ body{
     position: absolute;
     top: 0;
     transform-origin: 50% bottom;
-    transition: height 0.3s;
+    /*transition: height 0.3s;*/
+    transition: border-width 0.5s;
     border-top: 1rem solid var(--highlightedBackground);
     border-bottom: 0rem solid var(--highlightedBackground);
     background-color: transparent;
