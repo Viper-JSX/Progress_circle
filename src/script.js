@@ -9,10 +9,12 @@ function handleProgressToggle(){
     inProgress = !inProgress;
 
     if(inProgress){
-        progressFillStrip.style.animationName = "spinning";
+        progressFillStrip.style.animationPlayState = "running";
+        this.textContent = "Stop";
     }
     else{
-        progressFillStrip.style.animationName = "none";
+        progressFillStrip.style.animationPlayState = "paused";
+        this.textContent = "Start";
     }
 }
 
@@ -21,15 +23,15 @@ function handleProgressCircleTypeChange(event){
 
     switch(progressCircleType){
         case "single-side":{
-            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom";   
+            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom;";   
             break;
         }
         case "double-side":{
-            progressFillStrip.style.cssText = "height: 100%; transform-origin: 50% 50%";   
+            progressFillStrip.style.cssText = "height: 100%; transform-origin: 50% 50%;";   
             break;
         }
         default:{
-            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom";   
+            progressFillStrip.style.cssText = "height: 50%; transform-origin: 50% bottom;";   
             break
         }
     }
