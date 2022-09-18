@@ -88,7 +88,7 @@ button:hover, select:hover{
     border-top: var(--stripThikness) solid var(--highlightedBackground);
     border-bottom: 0rem solid var(--highlightedBackground);
     background-color: transparent;
-    
+
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: spinning;
