@@ -21,7 +21,7 @@ body{
     background-color: var(--lightDarkBackground);
 }
 
-.progressCircle{
+#progressCircle{
     width: 15rem;
     height: 15rem;
     background-color: var(--darkBackground);
@@ -33,7 +33,7 @@ body{
     z-index: 1;
 }
 
-.innerProgressCircle{
+#innerProgressCircle{
     width: 90%;
     height: 90%;
     background-color: var(--lightDarkBackground);
@@ -41,7 +41,7 @@ body{
     z-index: 3;
 }
 
-.progressFillStrip{
+#progressFillStrip{
     width: 10%;
     height: 50%;
     background-color: var(--highlightedBackground);
