@@ -2,7 +2,7 @@ const progressFillStrip = document.getElementById("progressFillStrip");
 const toggleProgress = document.getElementById("toggleProgress");
 const progressCircleTypeSwitch = document.getElementById("progressCircleTypeSwitch");
 
-let rotationSpeed = 10; //(0; 30];
+let rotationSpeed = 5; //(0; 30];
 let inProgress = false;
 let progressCircleType = "single-side";
 
