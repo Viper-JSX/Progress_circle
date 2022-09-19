@@ -58,6 +58,10 @@ button:hover, select:hover{
     min-height: 280px;
     border-radius: 50%;
     transition: 0.2s;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +72,7 @@ button:hover, select:hover{
 #progressCircle:hover, #progressCircle:focus{
     box-shadow: 0 0 10px red;
     transform: scale(1.1);
+    animation-name: changingBoxShadow;
 }
 
 #innerProgressCircle{
@@ -123,7 +128,7 @@ button:hover, select:hover{
     }
 }
 
-@keyframes changingBorderColor{
+@keyframes changingBoxShadow{
     0%{
         box-shadow: 0 0 10px red;
     }
