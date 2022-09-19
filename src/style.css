@@ -27,6 +27,8 @@ button, select{
     background-color: var(--darkBackground);
     border-radius: 0.3rem;
     transition: 0.1s;
+    font-size: 1.2rem;
+    font-family: monospace;
 }
 
 button:hover, select:hover{
@@ -95,6 +97,20 @@ button:hover, select:hover{
     animation-play-state: paused;
 
     z-index: 3;
+}
+
+#widgetConfigurations{
+    display: flex;
+}
+
+#widgetConfigurations > *{
+    margin: 0.5rem;
+}
+
+#widgetConfigurations button, #widgetConfigurations select{
+    width: 5rem;
+    height: 2.5rem;
+    min-width: max-content;
 }
 
 @keyframes spinning {
