@@ -107,6 +107,7 @@ button:hover, select:hover{
 
 #widgetConfigurations{
     display: flex;
+    justify-content: center;
 }
 
 #widgetConfigurations > *{
