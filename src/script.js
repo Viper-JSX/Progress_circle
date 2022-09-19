@@ -1,3 +1,4 @@
+const progressCircle = document.getElementById("progressCircle");
 const progressFillStrip = document.getElementById("progressFillStrip");
 const toggleProgress = document.getElementById("toggleProgress");
 const progressCircleTypeSwitch = document.getElementById("progressCircleTypeSwitch");
@@ -6,11 +7,19 @@ let rotationSpeed = 5; //(0; 30];
 let inProgress = false;
 let progressCircleType = "single-side";
 
+
 progressFillStrip.style.animationDuration = `${5 / rotationSpeed}s`;
 progressCircleTypeSwitch.value = "single-side";
 
+progressCircle.addEventListener("click", handleProgressCircleClick);
 toggleProgress.addEventListener("click", handleProgressToggle);
 progressCircleTypeSwitch.addEventListener("change", handleProgressCircleTypeChange)
+
+
+
+function handleProgressCircleClick(){
+    progressCircle.classList.toggle("active");
+}
 
 function handleProgressToggle(){
     inProgress = !inProgress;

@@ -69,10 +69,12 @@ button:hover, select:hover{
     z-index: 1;
 }
 
-#progressCircle:hover, #progressCircle:focus, #progressCircle:active{
-    box-shadow: 0 0 10px red;
-    transform: scale(1.1);
+#progressCircle.active{
     animation-name: changingBoxShadow;
+}
+
+#progressCircle:hover{
+    transform: scale(1.1);
 }
 
 #innerProgressCircle{
