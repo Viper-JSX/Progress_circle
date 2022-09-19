@@ -20,6 +20,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--lightDarkBackground);
+    user-select: none;
 }
 
 button, select{
@@ -64,7 +65,7 @@ button:hover, select:hover{
     z-index: 1;
 }
 
-#progressCircle:hover{
+#progressCircle:hover, #progressCircle:focus{
     box-shadow: 0 0 10px red;
     transform: scale(1.1);
 }
