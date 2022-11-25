@@ -15,4 +15,5 @@ whether the rotation strip appear on one side or on both
 * JavaScript
 
 # How to run
-Simply drag and drop index.html file in your browser
+* Open the link: https://progress-circle-by-viper-jsx.netlify.app
+* Or simply drag and drop index.html file in your browser
