@@ -1,6 +1,6 @@
 # Progress circle
 
-Table of contents: 
+# Table of contents: 
 * General info
 * Technologies
 * How to run
